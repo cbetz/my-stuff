@@ -41,4 +41,6 @@ System:
     Xcode      : Xcode 8.3.3 Build version 8E3004b
     ios-deploy : 1.9.1
     ios-sim    : 5.0.11
-    npm        : 3.10.8```
+    npm        : 3.10.8
+    
+```
