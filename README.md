@@ -1,26 +1,16 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+#My Stuff
 
-## How to use this template
+###A Google Cloud Vision + Ionic 3 + Firebase App
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+Steps to get up-and-running:
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+1. Create a new Google Cloud project and enable the Vision API by following the instructions here: https://cloud.google.com/vision/docs/before-you-begin.
+2. Create an API key: https://support.google.com/cloud/answer/6158862?hl=en. Be sure to review the API key best practices here: https://support.google.com/cloud/answer/6310037.
+3. Create a Firebase project by heading over to https://firebase.google.com, clicking Get Started, then the Import Google Project button. Choose the project you created in Step 1.
+4. Set the database rules by clicking Database, then the Rules tab. Use the configuration below. Important: This will open up your database so that anyone can both read and write data. In a real world application you will want to restrict this access.
+5. Edit /src/environment.ts, adding the configuration values from Steps 2 and 4.
 
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
-
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+Then:
+```ionic cordova run android```
+or
+```ionic cordova run ios```
