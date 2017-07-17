@@ -6,5 +6,6 @@ export const environment = {
         projectId: "",
         storageBucket: "",
         messagingSenderId: ""
-    }
+    },
+    googleCloudVisionAPIKey: ""
 };
