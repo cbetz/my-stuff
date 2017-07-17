@@ -1,14 +1,22 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title>My Stuff</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-card *ngFor="let item of items | async">
+    <img [src]="'data:image/png;base64,' + item.imageData"/>
+    <ion-card-content>
+      <ion-list no-lines>
+        <ion-list-header>
+          Labels
+        </ion-list-header>
+        <ion-item *ngFor="let label of item.results[0].labelAnnotations">{{label.description}}</ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-fab bottom right>
+    <button ion-fab (click)="takePhoto()"><ion-icon name="camera"></ion-icon></button>
+  </ion-fab>
 </ion-content>
