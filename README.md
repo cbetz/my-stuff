@@ -1,6 +1,6 @@
-#My Stuff
+# My Stuff
 
-###A Google Cloud Vision + Ionic 3 + Firebase App
+### A Google Cloud Vision + Ionic 3 + Firebase App
 
 Steps to get up-and-running:
 
@@ -10,7 +10,7 @@ Steps to get up-and-running:
 4. Set the database rules by clicking Database, then the Rules tab. Use the configuration below. Important: This will open up your database so that anyone can both read and write data. In a real world application you will want to restrict this access.
 5. Edit /src/environment.ts, adding the configuration values from Steps 2 and 4.
 
-Then:
+Then
 ```ionic cordova run android```
 or
 ```ionic cordova run ios```
